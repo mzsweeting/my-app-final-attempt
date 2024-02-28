@@ -12,11 +12,13 @@ export default function App() {
     <Weather />
     <footer>
       This project was coded by: Anntoinette Sweeting and is{" "}
-    <a href= "https://github.com/mzsweeting/my-app-final-attempt.git"
-    target="_blank">
-
-       open-sourced on GitHub
-    </a>
+    <a
+            href="https://github.com/mzsweeting/my-app-final-attempt.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
     </footer>
     </div>
     </div>
