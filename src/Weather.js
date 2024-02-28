@@ -8,6 +8,7 @@ export default function Weather() {
     function handleResponse(response) {
         console.log(response.data);
         setTemperature(response.data.main.temp);
+        setReady(true);
     }
 
     if (ready) {
@@ -59,11 +60,11 @@ export default function Weather() {
  );
     } else {
       const apiKey = "b686de8bc01821a479175c046eac1f90";
-    let city = "Atlanta"
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
-    q=${city}&appid=${apiKey}units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+      let city = "Atlanta";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
+      q=${city}&appid=${apiKey}units=metric`;
+      axios.get(apiUrl).then(handleResponse);
 
-        return "Loading...";
+      return "Loading...";
     }
 }
