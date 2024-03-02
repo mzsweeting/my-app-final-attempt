@@ -1,15 +1,13 @@
 import React from "react";
 import Weather from "./Weather";
-import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 export default function App() {
   return (
   <div className="App">
     <div className="container">
+      <Weather defaultCity="Atlanta" />
 
-    
-    <Weather />
     <footer>
       This project was coded by: Anntoinette Sweeting and is{" "}
     <a
@@ -19,8 +17,8 @@ export default function App() {
           >
             open-sourced on GitHub
           </a>
-    </footer>
-    </div>
+      </footer>
+     </div>
     </div>
   );
 }
